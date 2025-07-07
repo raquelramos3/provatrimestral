@@ -5,11 +5,13 @@ let mostraHTML = document.getElementById("mostraHTML");
 
 function cadastrartime() {
 
-      if (totaltimes > maxtimes) {
+      if (totaltimes >= maxtimes) {
         alert("Limite de 4 times atingido!");
         return;
       }
- 
+      
+      totaltimes++;
+
       let nometime = prompt("Digite o nome do time:");
 
       let nome1 = prompt("Digite o nome do primeiro jogador:");
